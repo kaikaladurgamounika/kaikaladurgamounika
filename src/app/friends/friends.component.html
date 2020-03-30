@@ -1,0 +1,8 @@
+ <div class="row"> 
+       <input [(ngModel)]='output_type' type="text"  />
+       <button (click)='getfriends()' class="btn btn-primary">Submit</button> 
+</div>
+<div *ngFor="let friend of friends">
+   <h4>{{friend.id}} {{friend.name}}</h4> 
+ </div>
+ 
